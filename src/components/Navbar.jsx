@@ -1,28 +1,55 @@
-import React from 'react'
-import Logo from '../assets/logo.png'
+import React from "react";
 
 const Navbar = () => {
   return (
+
     <>
-      <nav >
-        <div
-          className='h-20 flex items-center justify-between px-4 bg-gray-800 text-white'>
-          <div className='flex items-center gap-2'> 
-            <img className='h-18 ml-2' src={Logo} alt="Logo" srcset="" />
-            <h3 className='text-xl text-white font-bold'>ParkNova</h3>
-          </div>
-          <div className='flex space-x-4 m-4 justify-evenly'>
-            <a href="/Home">Home</a>
-            <a href="/About">About</a>
-            <a href="/Contact">Contact</a>
-          </div>
+    <nav className="w-full position-sticky bg-[#050816] text-white px-8 py-4 flex items-center justify-between shadow-lg">
+      
+      {/* Logo */}
+      <div className="flex items-center gap-2">
+        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl font-bold">
+          P
         </div>
+        <h1 className="text-2xl font-bold"> Park<span className="text-blue-500">Nova</span>
+        </h1>
+      </div>
 
+ <div className="flex items-center gap-8">
+      <ul className="hidden md:flex items-center gap-8 text-[16px] font-medium">
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          Home
+        </li>
 
-      </nav>
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          Find Parking
+        </li>
 
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          How It Works
+        </li>
+
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          Features
+        </li>
+
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          Pricing
+        </li>
+
+        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
+          Contact
+        </li>
+      </ul>
+
+      {/* Button */}
+      <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-xl font-semibold transition duration-300">
+        Login / Sign Up
+      </button>
+      </div>
+    </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
