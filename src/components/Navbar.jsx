@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
 
     <>
-    <nav className="w-full position-sticky bg-[#050816] text-white px-8 py-4 flex items-center justify-between shadow-lg">
+    <nav className="w-full position-sticky bg-transparent text-white px-8 py-4 flex items-center justify-between shadow-lg">
       
       {/* Logo */}
       <div className="flex items-center gap-2">
@@ -41,9 +41,8 @@ const Navbar = () => {
           Contact
         </li>
       </ul>
-
-      {/* Button */}
-      <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-xl font-semibold transition duration-300">
+ 
+      <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-2xl font-semibold transition duration-300">
         Login / Sign Up
       </button>
       </div>
