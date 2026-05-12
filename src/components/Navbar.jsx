@@ -1,4 +1,5 @@
 import React from "react";
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -79,6 +80,9 @@ const Navbar = () => {
           <button className="bg-blue-600  hover:bg-blue-700 px-5 py-2 text-sm  rounded-2xl font-semibold transition duration-300">
             Login / Sign Up
           </button>
+           <button className="lg:hidden md:hidden text-3xl">
+          <FiMenu />
+        </button>
 
         </div>
       </nav>
