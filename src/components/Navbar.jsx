@@ -4,49 +4,84 @@ const Navbar = () => {
   return (
 
     <>
-    <nav className="w-full position-sticky bg-transparent text-white px-8 py-4 flex items-center justify-between shadow-lg">
-      
-      {/* Logo */}
-      <div className="flex items-center gap-2">
-        <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl font-bold">
-          P
+      <nav className="w-full position-sticky bg-transparent text-white px-8 py-4 flex items-center justify-between
+       shadow-lg">
+
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl font-bold">
+            P
+          </div>
+          <h1 className="text-2xl font-bold"> Park<span className="text-blue-500">Nova</span>
+          </h1>
         </div>
-        <h1 className="text-2xl font-bold"> Park<span className="text-blue-500">Nova</span>
-        </h1>
-      </div>
+        <div className="flex justify-end gap-4">
 
- <div className="flex items-center gap-8">
-      <ul className="hidden md:flex items-center gap-8 text-[16px] font-medium">
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          Home
-        </li>
+          <div className="hidden lg:flex items-center">
+            <ul className="hidden md:flex items-center gap-8 text-[16px] font-medium">
 
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          Find Parking
-        </li>
+              <li>
+                <a
+                  href="/"
+                  className="hover:text-blue-500 transition duration-300"
+                >  Home
+                </a>
+              </li>
 
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          How It Works
-        </li>
+              <li>
+                <a
+                  href="/find-parking"
+                  className="hover:text-blue-500 transition duration-300"
+                >
+                  Find Parking
+                </a>
+              </li>
 
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          Features
-        </li>
+              <li>
+                <a
+                  href="/how-it-works"
+                  className="hover:text-blue-500 transition duration-300"
+                >
+                  How It Works
+                </a>
+              </li>
 
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          Pricing
-        </li>
+              <li>
+                <a
+                  href="/features"
+                  className="hover:text-blue-500 transition duration-300"
+                >
+                  Features
+                </a>
+              </li>
 
-        <li className="hover:text-blue-500 cursor-pointer transition duration-300">
-          Contact
-        </li>
-      </ul>
- 
-      <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-2xl font-semibold transition duration-300">
-        Login / Sign Up
-      </button>
-      </div>
-    </nav>
+              <li>
+                <a
+                  href="/pricing"
+                  className="hover:text-blue-500 transition duration-300"
+                >
+                  Pricing
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contact"
+                  className="hover:text-blue-500 transition duration-300"
+                >
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+          <button className="bg-blue-600  hover:bg-blue-700 px-5 py-2 text-sm  rounded-2xl font-semibold transition duration-300">
+            Login / Sign Up
+          </button>
+
+        </div>
+      </nav>
     </>
   );
 };
