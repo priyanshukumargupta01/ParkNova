@@ -1,18 +1,16 @@
 import React from "react";
+import Logo from "../assets/logo.png";
 import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   return (
 
     <>
-      <nav className="w-full position-sticky bg-transparent text-white px-8 py-4 flex items-center justify-between
-       shadow-lg">
+      <nav className="w-full fixed left-0 top-0 bg-transparent text-white px-8 py-4 flex items-center justify-between z-50">
 
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-xl font-bold">
-            P
-          </div>
+        <div className="flex items-center gap-2 ">
+          <img src={Logo} alt="Logo" className="h-10" />
           <h1 className="text-2xl font-bold"> Park<span className="text-blue-500">Nova</span>
           </h1>
         </div>
@@ -73,16 +71,15 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
-
             </ul>
 
           </div>
           <button className="bg-blue-600  hover:bg-blue-700 px-5 py-2 text-sm  rounded-2xl font-semibold transition duration-300">
             Login / Sign Up
           </button>
-           <button className="lg:hidden md:hidden text-3xl">
-          <FiMenu />
-        </button>
+          <button className="lg:hidden md:hidden text-3xl">
+            <FiMenu />
+          </button>
 
         </div>
       </nav>
