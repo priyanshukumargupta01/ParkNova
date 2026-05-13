@@ -46,8 +46,20 @@ const Home = () => {
 
           
         </div>
+ 
+        <div className="flex-1 relative flex justify-center items-center">
+ 
+          <div className="absolute w-500px h-500px bg-blue-600/20 blur-[120px] rounded-full"></div>
+ 
+          <img
+            src={HomeImage}
+            alt="Hero"
+            className="relative z-10 w-full max-w-650px drop-shadow-[0_0_40px_rgba(59,130,246,0.5)]"
+          />
 
-        
+         
+
+        </div>
       </div>
  
     </section>
