@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen text-white overflow-hidden"
+      className="w-full min-h-screen text-white overflow-hidden bg-image-{HomeImage}"
     >
       <div className="px-6 md:px-10 lg:px-16 pt-28 flex flex-col-reverse lg:flex-row md:flex-row items-center justify-between gap-12">
 
@@ -44,12 +44,16 @@ const Home = () => {
           </div>
 
         </div>
-        <div className="flex-1 hidden relative lg:flex justify-center items-center">
-          <div className="absolute w-350px h-350px md:w-500px md:h-500px bg-blue-600/20 blur-[120px] rounded-full"></div>
+        <div className="flex-1 hidden lg:flex justify-center items-center relative overflow-hidden">
+
+</div>
+
+{/* IMAGE */}
+        <div className="absolute inset-0 flex items-center justify-center p-8">
           <img
             src={HomeImage}
-            alt="Hero"
-            className="relative z-10 w-full max-w-650px drop-shadow-[0_0_40px_rgba(59,130,246,0.5)]"
+            alt="Home"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
