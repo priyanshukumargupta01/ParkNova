@@ -34,28 +34,25 @@ const Home = () => {
           {/* BUTTONS */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8">
 
-            <button className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 px-6 py-4 rounded-2xl shadow-lg shadow-blue-600/30 font-medium">
+            <button className="bg-blue-600 hover:bg-blue-700 transition-all duration-300 lg:px-6 px-4 lg:py-4 py-2 rounded-2xl shadow-lg shadow-blue-600/30 font-medium">
               Find Parking Now →
             </button>
 
-            <button className="border border-blue-500/30 hover:bg-blue-500/10 transition-all duration-300 px-6 py-4 rounded-2xl font-medium">
+            <button className="border border-blue-500/30 hover:bg-blue-500/10 transition-all duration-300 lg:px-6 px-4 lg:py-4 py-2 rounded-2xl font-medium">
               How It Works
             </button>
           </div>
 
         </div>
         <div className="flex-1 hidden lg:flex justify-center items-center relative overflow-hidden">
+  
+  <img
+    src={HomeImage}
+    alt="Hero"
+    className="relative z-10 w-full max-w-750px object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.6)]"
+  />
 
 </div>
-
-{/* IMAGE */}
-        <div className="absolute inset-0 flex items-center justify-center p-8">
-          <img
-            src={HomeImage}
-            alt="Home"
-            className="w-full h-full object-contain"
-          />
-        </div>
       </div>
     </section>
   );
